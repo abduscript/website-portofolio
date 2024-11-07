@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form CV</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+<body>
+    <div class="container">
+        <form autocomplete="off">
+            <h4>Registered</h4>
+            <div class="input-section">
+                <label>First Name <span class="required-color">*</span></label>
+                <input type="text" placeholder="Masukkan Nama Depan" id="first-name-input" required/>
+                <span id="first-name-error" class="hide required-color error-message">invalid input</span>
+                <span id="empty-first-name" class="hide required-color error-message">first name can't be blank</span>
+            </div>
+            <div class="input-section">
+                <label>Last Name <span class="required-color">*</span></label>
+                <input type="text" placeholder="Masukkan Nama Belakang" id="last-name-input" required/>
+                <span id="last-name-error" class="hide required-color error-message">invalid input</span>
+                <span id="empty-last-name" class="hide required-color error-message">last name can't be blank</span>
+            </div>
+            <div class="input-section">
+                <label>Email <span class="required-color">*</span></label>
+                <input type="email" placeholder="Masukkan Email" id="email" required/>
+                <span id="email-error" class="hide required-color error-message">invalid input</span>
+                <span id="empty-email" class="hide required-color error-message">Email can't be blank</span>
+            </div>
+            <div class="input-section">
+                <label>Phone Number<span class="required-color">*</span></label>
+                <input type="number" placeholder="Masukkan nomor telepon" id="phone" required/>
+                <span id="phone-error" class="hide required-color error-message">invalid input</span>
+                <span id="empty-phone" class="hide required-color error-message">phone number must consist of 12 characters</span>
+            </div>
+            <div class="input-section">
+                <label>Password<span class="required-color">*</span></label>
+                <input type="password" placeholder="Masukkan Password" id="password" required/>
+                <span id="password-error" class="hide required-color error-message">password must consist of 8 characters</span>
+                <span id="empty-password" class="hide required-color error-message">password can't be blank</span>
+            </div>
+            <div class="input-section">
+                <label>Password<span class="required-color">*</span></label>
+                <input type="password" placeholder="Ulangi Password" id="verify-password" required/>
+                <span id="verify-password-error" class="hide required-color error-message">harus sama dengan password sebelumnya</span>
+                <span id="empty-verify-password" class="hide required-color error-message">password can't be blank</span>
+            </div>
+            <button id="submit-button">Registered</button>
+        </form>
+    </div>
+<script src="js/main.js"></script>    
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</body>
+</html>
